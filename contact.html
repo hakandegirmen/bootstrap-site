@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Contact Page</title>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond|Muli" rel="stylesheet">
+    <link rel="stylesheet" href="./libs/iconic/font/css/iconic-glyphs.css">
+    <link rel="stylesheet" href="./libs/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+    <div id="bootstrap-override" class="container-fluid">
+        <div class="row">
+            <header class="col-sm-12">
+                <nav class="navbar navbar-light bg-faded">
+                    <a class="navbar-brand" href="index.html">Earth Foundation</a>
+                    <button class="navbar-toggler hidden-sm-up" data-toggle="collapse" data-target="#collapse-navbar">&#9776;</button>
+                    <div class="collapse navbar-toggleable-xs" id="collapse-navbar">
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item helpButton">
+                                <a href="help.html" class="nav-link">Help</a>
+                            </li>
+                            <li class="nav-item contactButton">
+                                <a href="contact.html" class="nav-link">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <main>
+            <div class="row contactBody">
+                <div class="col-md-4 col-md-offset-1 col-sm-8 col-sm-offset-2">
+                    <form>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="name">
+                                        Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="Enter name" required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">
+                                        Email Address</label>
+                                    <div class="input-group">
+                                        <span class="input-group-addon"><span class="iconic" data-glyph="envelope-closed" title="envelope closed" aria-hidden="true"></span>
+                                        </span>
+                                        <input type="email" class="form-control" id="email" placeholder="Enter email" required="required" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="name">
+                                        Message</label>
+                                    <textarea name="message" id="message" class="form-control" rows="9" cols="25" required="required" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-md-offset-3 col-xs-8 col-xs-offset-0">
+                                <button type="submit" class="btn btn-primary pull-right" id="btnContactUs">
+                                    Send Message</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-md-6 col-md-offset-0 col-sm-8 col-sm-offset-2 map">
+                    <h2>Location</h2>
+                    <img class="img-responsive" src="http://maps.googleapis.com/maps/api/staticmap?center=1385,Woodroffe+Ave,Nepean,ON&zoom=13&scale=false&size=450x300&maptype=roadmap&key=AIzaSyDbQaaheJoMGywAWqKaxCejrKJLRkCMEOQ&format=png&visual_refresh=true" alt="Google Map of Albany, NY">
+                </div>
+            </div>
+        </main>
+        <div class="row">
+            <div class="col-sm-12">
+                <footer>
+                    <div id="footer" class="nav navbar-default navbar-fixed-botton">
+                        <div class="container footer">
+                            <p class="pull-left footerText">Earth Foundation<a href="http://www.freepik.com">| Designed by Ajipebriana / Freepik |</a></p>
+                            <div class="pull-right">
+                                <ul class="nav nav-pills socialIcons">
+                                    <li class="iconic" data-glyph="social-twitter" title="twitter" aria-hidden="true"></li>
+                                    <li class="iconic" data-glyph="social-facebook" title="facebook" aria-hidden="true"></li>
+                                    <li class="iconic" data-glyph="social-youtube" title="youtube" aria-hidden="true"></li>
+                                    <li class="iconic" data-glyph="social-pinterest" title="pinterest" aria-hidden="true"></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="./libs/jquery/dist/jquery.min.js"></script>
+    <script src="./libs/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
